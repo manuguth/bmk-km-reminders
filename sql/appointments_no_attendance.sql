@@ -25,7 +25,7 @@ appointments_no_attendance AS (
   where
     year(appointment_date) = 2025
     and attending = 0
-    -- and invited < 10 -- temporary for testing
+    and invited < 10 -- temporary for testing
     and datediff(current_date, appointment_date) > 0
 )
 select
@@ -50,5 +50,5 @@ from
   AND mtrx.positive IS TRUE
 
 where
-1=1 
+1=1
   -- AND appointmentId = 2530399
