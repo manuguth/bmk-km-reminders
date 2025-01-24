@@ -50,5 +50,5 @@ from
   AND mtrx.positive IS TRUE
 
 where
-1=1 
+1=1
   -- AND appointmentId = 2530399
