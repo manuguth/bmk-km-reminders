@@ -23,7 +23,7 @@ appointments_no_attendance AS (
   from
     bmk_prod.gold.v_km_appointments_summary
   where
-    year(appointment_date) = 2025
+    year(appointment_date) >= 2025
     and attending = 0
     -- and invited < 10 -- temporary for testing
     and datediff(current_date, appointment_date) > 0
